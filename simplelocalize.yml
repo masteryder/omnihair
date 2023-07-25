@@ -1,0 +1,7 @@
+# 📦 file: ./simplelocalize.yml
+apiKey: DFF581402942e240BdbC228d62a84D3d46B70a1203e48Ef8
+downloadFormat: single-language-json
+downloadPath: ./src/locales/{lang}/{ns}.json
+
+uploadFormat: single-language-json
+uploadPath: ./src/locales/{lang}/{ns}.json
