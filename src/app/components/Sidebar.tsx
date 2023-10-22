@@ -23,6 +23,7 @@ export const Sidebar = ({isCollapsed}) => {
                 <Button className={'group/menu-item justify-start text-start'}
                         iconClassName={'group-hover/menu-item:text-primary transition-all'}
                         sizeModifier={'block'}
+                        href="/register"
                         icon={faCashRegister}>
                     {t("Cash register")}
                 </Button>
@@ -31,6 +32,7 @@ export const Sidebar = ({isCollapsed}) => {
                 <Button className={'group/menu-item justify-start text-start'}
                         iconClassName={'group-hover/menu-item:text-primary transition-all'}
                         sizeModifier={'block'}
+                        href="/clients"
                         icon={faUsers}>
                     {t("Clients")}
                 </Button>
@@ -39,6 +41,7 @@ export const Sidebar = ({isCollapsed}) => {
                 <Button className={'group/menu-item justify-start text-start'}
                         iconClassName={'group-hover/menu-item:text-primary transition-all'}
                         sizeModifier={'block'}
+                        href="/reports"
                         icon={faBook}>
                     {t("Reports")}
                 </Button>
@@ -47,6 +50,7 @@ export const Sidebar = ({isCollapsed}) => {
                 <Button className={'group/menu-item justify-start text-start'}
                         iconClassName={'group-hover/menu-item:text-primary transition-all'}
                         sizeModifier={'block'}
+                        href="/services"
                         icon={faScissors}>
                     {t("Services")}
                 </Button>
@@ -55,6 +59,7 @@ export const Sidebar = ({isCollapsed}) => {
                 <Button className={'group/menu-item justify-start text-start'}
                         iconClassName={'group-hover/menu-item:text-primary transition-all'}
                         sizeModifier={'block'}
+                        href="/stock"
                         icon={faBox}>
                     {t("Stock")}
                 </Button>

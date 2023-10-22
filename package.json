@@ -35,6 +35,7 @@
     "daisyui": "^3.4.0",
     "eslint-config-prettier": "^8.8.0",
     "next-translate-plugin": "^2.5.2",
-    "prettier": "3.0.0"
+    "prettier": "3.0.0",
+    "server-only": "^0.0.1"
   }
 }

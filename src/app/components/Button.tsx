@@ -5,12 +5,12 @@ import {cn} from "../utils/cn";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 type ButtonProps = {
-    color: 'default' | 'neutral' | 'primary' | 'secondary' | 'accent' | 'success' | 'info' | 'danger' | 'warning';
-    variant: 'filled' | 'link' | 'ghost' | 'outlined';
-    size: 'xs' | 'sm' | 'md' | 'lg';
+    color?: 'default' | 'neutral' | 'primary' | 'secondary' | 'accent' | 'success' | 'info' | 'danger' | 'warning';
+    variant?: 'filled' | 'link' | 'ghost' | 'outlined';
+    size?: 'xs' | 'sm' | 'md' | 'lg';
     isWide?: boolean;
-    sizeModifier: 'wide' | 'block';
-    appearanceModifier: 'ghost' | 'glass';
+    sizeModifier?: 'wide' | 'block';
+    appearanceModifier?: 'ghost' | 'glass';
     isDisabled?: boolean;
     isLoading?: boolean;
     shape?: 'square' | 'rounded' | 'rounded-full';
@@ -100,7 +100,7 @@ export const Button = ({
                            iconClassName,
                            children,
                        }: ButtonProps) => {
-    let HtmlTag: string | ReactNode = 'button';
+    let HtmlTag: string | ReactNode | typeof Link = 'button';
     if (href) {
         HtmlTag = Link;
     }
@@ -110,7 +110,7 @@ export const Button = ({
         onClick={onClick}
         disabled={isDisabled || isLoading}
         className={cn(
-            'btn',
+            'btn no-animation',
             classes.color[color],
             classes.variant[variant],
             classes.size[size],
