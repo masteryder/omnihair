@@ -17,10 +17,11 @@ export const Sidebar = ({isCollapsed}) => {
     const pathname = usePathname();
 
     return <div
-        className={cn('bg-neutral min-h-screen h-full pt-2 pl-2 pb-2', isCollapsed ? 'w-28' : 'w-56')}>
-        <div className={'text-base-100 text-center text-lg font-bold'}>OMNI
-            hair
+        className={cn('bg-neutral min-h-screen h-full pt-2 pl-2 pb-2', isCollapsed ? 'w-28' : 'w-72')}>
+        <div className={'mb-4'}>
+            <img src={'/logo/svg/logo_color_no_bg.svg'}/>
         </div>
+
         <ul className={'flex flex-col gap-1'}>
             {/* Sidebar content here */}
             <li>
