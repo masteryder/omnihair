@@ -13,8 +13,8 @@ export const GET = (request: Request) => {
 }
 
 
-export const PUT = (request: Request) => {
-    const object = request.body;
-    const res = insertClient(object);
+export const PUT = async (request: Request, somethingElse) => {
+    const body = await request.json()
+    const res = insertClient(body);
     return Response.json({res});
 }
