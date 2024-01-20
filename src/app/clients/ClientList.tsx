@@ -1,4 +1,4 @@
-import {getClients} from "../../../db/clients";
+import {getClients} from "../../db/clients";
 
 export const ClientList = () => {
     const clients = getClients();

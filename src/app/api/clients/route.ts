@@ -1,4 +1,4 @@
-import {getClient, getClients, insertClient} from "../../../../db/clients";
+import {getClient, getClients, insertClient} from "../../../db/clients";
 
 export const GET = (request: Request) => {
     const {searchParams} = new URL(request.url);
